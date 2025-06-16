@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Namaste NodeJS",
+      "type": "node",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeExecutable": "${env:HOME}/.nvm/versions/node/v22.16.0/bin/node",
+      "program": "${workspaceFolder}/src/index.ts",
+      "preLaunchTask": "npm: build",
+      "outFiles": ["${workspaceFolder}/lib/**/*.js"],
+      "sourceMaps": true
+    }
+  ]
+}
