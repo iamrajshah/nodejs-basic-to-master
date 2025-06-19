@@ -23,9 +23,9 @@ setTimeout(() => console.log("Timer expired"), 0);
 // Highest priority
 process.nextTick(() => console.log("process.nextTick"));
 
-function printA() {
+const printA = () => {
   console.log("a=", a);
-}
+};
 
 printA();
 console.log("Last line of the file.");
