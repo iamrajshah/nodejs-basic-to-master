@@ -18,7 +18,7 @@ setTimeout(() => console.log("Timer expired"), 0);
 
 Promise.resolve("Promise").then(console.log);
 
-fs.readFile("./file.txt", "utf8", () => {
+fs.readFile("", "utf8", () => {
   // Here most important is that this will call at last not like outside..
   // Reason is immediate is present in XX stage and that will execute first and at last
   // this below timer
